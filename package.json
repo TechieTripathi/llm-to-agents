@@ -1,5 +1,5 @@
 {
-  "name": "llm-for-professionals",
+  "name": "llm-to-agents",
   "private": true,
   "type": "module",
   "scripts": {
@@ -22,5 +22,10 @@
   "dependencies": {
     "gpt-tokenizer": "^4.0.0"
   },
-  "description": "65-slide Slidev workshop: From LLMs to AI Agents \u2014 Transforming Professional Productivity"
+  "description": "65-slide Slidev workshop: From LLMs to AI Agents \u2014 Transforming Professional Productivity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechieTripathi/llm-to-agents.git"
+  },
+  "homepage": "https://techietripathi.github.io/llm-to-agents/"
 }
