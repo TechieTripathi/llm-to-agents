@@ -1,0 +1,65 @@
+/*
+ * Design tokens — the only place colors, type and spacing are defined.
+ * Components must reference these variables, never hard-coded values.
+ */
+:root {
+  /* Surfaces */
+  --paper: #f7f7f5;          /* slide background: cool off-white, low projector glare */
+  --surface: #ffffff;        /* raised panels inside an artifact */
+  --stage: #eef0f2;          /* artifact stage / interactive area */
+  --rule: #d9dce1;           /* hairlines, borders */
+  --rule-strong: #b9bec6;
+
+  /* Ink */
+  --ink: #1a1a1a;            /* primary text */
+  --ink-2: #4a4f57;          /* secondary text (AA on paper) */
+  --ink-3: #6b7078;          /* tertiary / captions (AA large) */
+  --ink-inverse: #f7f7f5;
+
+  /* Accent: deep ultramarine, survives projector wash-out */
+  --accent: #2340c8;
+  --accent-strong: #1a2f96;
+  --accent-tint: #e5e9fb;
+  --accent-tint-2: #c9d2f6;
+
+  /* Status (semantic, always paired with icon or label) */
+  --ok: #1e7a46;      --ok-tint: #e1f1e7;
+  --warn: #a35f00;    --warn-tint: #fbefd9;
+  --bad: #c0352b;     --bad-tint: #f9e3e1;
+  --neutral: #6b7078; --neutral-tint: #eceef0;
+
+  /* Inverted (section dividers only) */
+  --night: #16181c;
+  --night-2: #2a2e35;
+
+  /* Type */
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Type scale at the 980×552 canvas. Calm, uncongested density (body 17, labels 14, titles 32). */
+  --fs-display: 44px;
+  --fs-title: 32px;
+  --fs-lead: 18px;
+  --fs-body: 17px;
+  --fs-small: 15px;
+  --fs-label: 14px;
+  --fs-micro: 11.5px;          /* footer chrome only — never for content */
+
+  /* Spacing */
+  --gutter: 56px;            /* slide side padding */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
+
+  /* Scale of everything inside an artifact slide's content area (boxes, chips, diagrams, controls). */
+  --artifact-scale: 0.86;
+
+  --radius: 6px;
+  --radius-sm: 3px;
+
+  /* Motion */
+  --dur: 0.4s;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0.01s; }
+}
